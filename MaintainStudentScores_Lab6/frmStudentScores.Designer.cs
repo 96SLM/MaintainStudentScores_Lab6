@@ -113,6 +113,7 @@
             btnAddNew.TabIndex = 8;
             btnAddNew.Text = "&Add New";
             btnAddNew.UseVisualStyleBackColor = true;
+            btnAddNew.Click += btnAddNew_Click;
             // 
             // btnUpdate
             // 
@@ -122,6 +123,7 @@
             btnUpdate.TabIndex = 9;
             btnUpdate.Text = "&Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
@@ -131,6 +133,7 @@
             btnDelete.TabIndex = 10;
             btnDelete.Text = "&Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnExit
             // 
@@ -140,6 +143,7 @@
             btnExit.TabIndex = 11;
             btnExit.Text = "E&xit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // lstStudents
             // 
@@ -152,7 +156,6 @@
             // 
             // frmStudentScores
             // 
-            AcceptButton = btnAddNew;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnExit;
@@ -171,6 +174,7 @@
             Controls.Add(txtScoreTotal);
             Name = "frmStudentScores";
             Text = "Student Scores";
+            Load += frmStudentScores_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -124,6 +124,7 @@
             btnOk1.TabIndex = 9;
             btnOk1.Text = "&Ok";
             btnOk1.UseVisualStyleBackColor = true;
+            btnOk1.Click += btnOk1_Click;
             // 
             // frmAddNewStudent
             // 

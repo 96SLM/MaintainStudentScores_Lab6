@@ -16,5 +16,10 @@ namespace MaintainStudentScores_Lab6
         {
             InitializeComponent();
         }
+
+        private void btnOk1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
