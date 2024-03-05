@@ -97,6 +97,7 @@
             btnAddScore.TabIndex = 6;
             btnAddScore.Text = "&Add Score";
             btnAddScore.UseVisualStyleBackColor = true;
+            btnAddScore.Click += btnAddScore_Click;
             // 
             // btnClearScores
             // 
@@ -106,6 +107,7 @@
             btnClearScores.TabIndex = 7;
             btnClearScores.Text = "Clear &Scores";
             btnClearScores.UseVisualStyleBackColor = true;
+            btnClearScores.Click += btnClearScores_Click;
             // 
             // btnCancel1
             // 
@@ -128,6 +130,7 @@
             // 
             // frmAddNewStudent
             // 
+            AcceptButton = btnAddScore;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnCancel1;

@@ -10,8 +10,10 @@ namespace MaintainStudentScores_Lab6
         {
             this.Close();
         }
+        //creates a list of strings called students
         public List<String> students = new List<String>();
         
+        //clears form
         private void frmStudentScores_Load(object sender, EventArgs e)
         {
             students.Clear();
@@ -22,10 +24,14 @@ namespace MaintainStudentScores_Lab6
                 txtAverage.Clear();
             }
         }
+
+        //a method to reload list box
         private void ReloadStudentListBox(String student)
         {
             lstStudents.Items.Add(student);
         }
+
+        //code for the addNew button
         private void btnAddNew_Click(object sender, EventArgs e)
         {
             Form addNewStudent = new frmAddNewStudent();
@@ -38,23 +44,24 @@ namespace MaintainStudentScores_Lab6
             }
         }
 
+        //code for the update button
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Form frmUpdateStudentScores = new frmUpdateStudentScores();
-            DialogResult = frmUpdateStudentScores.ShowDialog();
+            Form updateStudentScores = new frmUpdateStudentScores();
+            DialogResult = updateStudentScores.ShowDialog();
 
             if (DialogResult == DialogResult.OK)
             {
-
+                //fix code
+                students.Add(updateStudentScores.Tag.ToString());
                 ReloadStudentListBox(students.Last());
             }
         }
 
+        //code for the delete button
         private void btnDelete_Click(object sender, EventArgs e)
         {
             lstStudents.SelectedItem = null;
-
-            
         }
     }
 }
