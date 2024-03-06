@@ -25,11 +25,11 @@ namespace MaintainStudentScores_Lab6
         }
 
         private void btnAddScore_Click(object sender, EventArgs e)
+
         {
             txtScoresDisplay.Text += txtScore1.Text + " ";
             txtScore1.Clear();
             txtScore1.Focus();
-
         }
 
         private void btnClearScores_Click(object sender, EventArgs e)

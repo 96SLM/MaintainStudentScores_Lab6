@@ -12,6 +12,7 @@ namespace MaintainStudentScores_Lab6
         }
         //creates a list of strings called students
         public List<String> students = new List<String>();
+       // public decimal[] scoreArr = new Array();
         
         //clears form
         private void frmStudentScores_Load(object sender, EventArgs e)
@@ -61,7 +62,14 @@ namespace MaintainStudentScores_Lab6
         //code for the delete button
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            lstStudents.SelectedItem = null;
+
+            MessageBox.Show("\'Delete\' does not function currently", "Cannot Delete");
+            /*
+            students.RemoveAt(lstStudents.SelectedIndex);
+            lstStudents.ClearSelected();
+            ReloadStudentListBox(students[0]);
+            */
+           
         }
     }
 }
