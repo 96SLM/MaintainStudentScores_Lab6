@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace MaintainStudentScores_Lab6
 {
     public partial class frmStudentScores : Form
@@ -12,7 +14,8 @@ namespace MaintainStudentScores_Lab6
         }
         //creates a list of strings called students
         public List<String> students = new List<String>();
-       // public decimal[] scoreArr = new Array();
+        //public ArrayList scoreArr = new ArrayList(); 
+        
         
         //clears form
         private void frmStudentScores_Load(object sender, EventArgs e)
